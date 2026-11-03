@@ -21,3 +21,6 @@ A simple Python application for managing text document versions.
 Run tests using:
 
 pytest -v test_version_manager.py
+
+## Version Management
+Each saved version has a unique ID and timestamp.
