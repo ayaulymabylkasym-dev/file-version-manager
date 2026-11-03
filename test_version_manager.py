@@ -42,3 +42,14 @@ def test_compare_versions_as_text():
     assert isinstance(result, str)
     assert "Бірінші мәтін" in result
     assert "Екінші мәтін" in result
+
+
+def test_compare_versions_as_text():
+    id1 = vm.save_version("Бірінші мәтін")
+    id2 = vm.save_version("Екінші мәтін")
+
+    result = vm.compare_versions_as_text(id1, id2)
+
+    assert isinstance(result, str)
+    assert "Бірінші мәтін" in result
+    assert "Екінші мәтін" in result

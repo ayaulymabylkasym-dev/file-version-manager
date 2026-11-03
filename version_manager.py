@@ -59,3 +59,13 @@ def compare_versions_as_text(id1, id2):
         return "Нұсқалар арасында өзгеріс жоқ."
 
     return "\\n".join(diff)
+
+
+def compare_versions_as_text(id1, id2):
+    """Return a readable text comparison of two document versions."""
+    diff = compare_versions(id1, id2)
+
+    if not diff:
+        return "Нұсқалар арасында өзгеріс жоқ."
+
+    return "\\n".join(diff)
